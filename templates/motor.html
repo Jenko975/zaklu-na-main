@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelni elementi</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #6e8efb;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .models-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .model {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .model:hover {
+            transform: translateY(-5px);
+        }
+        
+        .model-image {
+            width: 200px;
+            height: 200px;
+            background-color: #eee;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        .model-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        @media (max-width: 768px) {
+            .models-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .model {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Motor</h1>
+        <p>Izberite si med našimi izbranimi modeli</p>
+    </div>
+    
+    <div class="models-container">
+        <!-- Model 1 -->
+        <div class="model">
+            <div class="model-image">[Dodaj sliko]</div>
+            <div class="model-name">[Ime modela]</div>
+            <button class="select-button">Izberi</button>
+        </div>
+        
+        <!-- Model 2 -->
+        <div class="model">
+            <div class="model-image">[Dodaj sliko]</div>
+            <div class="model-name">[Ime modela]</div>
+            <button class="select-button">Izberi</button>
+        </div>
+        
+        <!-- Model 3 -->
+        <div class="model">
+            <div class="model-image">[Dodaj sliko]</div>
+            <div class="model-name">[Ime modela]</div>
+            <button class="select-button">Izberi</button>
+        </div>
+        
+        <!-- Model 4 -->
+        <div class="model">
+            <div class="model-image">[Dodaj sliko]</div>
+            <div class="model-name">[Ime modela]</div>
+            <button class="select-button">Izberi</button>
+        </div>
+    </div>
+</body>
+</html>
