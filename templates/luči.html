@@ -3,58 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spletne strani | Moja Spletna Stran</title>
+    <title>Modelni elementi</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            color: #333;
+            padding: 20px;
             background-color: #f5f5f5;
         }
-        header {
-            background: linear-gradient(135deg, #6e8efb, #a777e3);
-            padding: 1rem;
-            color: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .service-header {
+        
+        .header {
             text-align: center;
-            margin-bottom: 2rem;
-        }
-        .service-content {
-            background: white;
-            padding: 2rem;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #6e8efb;
+            color: white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .back-button {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.5rem 1rem;
-            background: #6e8efb;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s;
+        
+        .models-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        .back-button:hover {
-            background: #5a7de0;
+        
+        .model {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .model:hover {
+            transform: translateY(-5px);
+        }
+        
+        .model-image {
+            width: 200px;
+            height: 200px;
+            background-color: #eee;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        .model-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        @media (max-width: 768px) {
+            .models-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .model {
+                width: 80%;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Luči</h1>
+    <div class="header">
+        <h1>Luči</h1>
+        <p>Izberite si med našimi izbranimi modeli</p>
+    </div>
+    
+    <div class="models-container">
+        <!-- Model 1 -->
+        <div class="model">
+            <div class="model-image">[Dodaj sliko]</div>
+            <div class="model-name">[Ime modela]</div>
+            <button class="select-button">Izberi</button>
         </div>
-    </header>
+        
+        <!-- Model 2 -->
+        <div class="model">
+            <div class="model-image">[Dodaj sliko]</div>
+            <div class="model-name">[Ime modela]</div>
+            <button class="select-button">Izberi</button>
+        </div>
+        
+        <!-- Model 3 -->
+        <div class="model">
+            <div class="model-image">[Dodaj sliko]</div>
+            <div class="model-name">[Ime modela]</div>
+            <button class="select-button">Izberi</button>
+        </div>
+        
+        <!-- Model 4 -->
+        <div class="model">
+            <div class="model-image">[Dodaj sliko]</div>
+            <div class="model-name">[Ime modela]</div>
+            <button class="select-button">Izberi</button>
+        </div>
+    </div>
     <a href="/" class="back-button">Nazaj na domačo stran</a>
 </body>
 </html>
